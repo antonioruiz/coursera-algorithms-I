@@ -16,6 +16,7 @@ public class QuickUnionUF extends UF {
         return root(p)==root(q);
     }
 
+    /* recursive
     private int root(int p){
         if(id[p]==p){
             return  p;
@@ -23,5 +24,13 @@ public class QuickUnionUF extends UF {
             return root(id[p]);
         }
 
+    }*/
+
+    //iterative
+    private int root(int p) {
+        while(id[p]!=p){
+            p=id[p];
+        }
+        return p;
     }
 }
