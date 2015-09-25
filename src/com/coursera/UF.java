@@ -6,7 +6,7 @@ public abstract class UF {
 
     public UF(int n) {
         id = new int[n];
-        for(int i =0; i<n; n++){
+        for(int i =0; i<n; i++){
             id[i]=i;
         }
     }

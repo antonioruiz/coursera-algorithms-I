@@ -8,8 +8,9 @@ public class QuickFindUF extends UF {
 
     @Override
     void union(int p, int q) {
+
         for(int i =0;i < id.length; i++){
-            if(id[i] == p){
+            if(id[i] == id[p]){
                 id[i] = id[q];
             }
         }
